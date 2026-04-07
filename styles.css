@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 img {
     max-width: 100%;
     display: block;
@@ -12,8 +13,13 @@ img {
 /* Page styling */
 body {
     background-color: #FFF8E9;
-    color: rgb(36, 36, 36);
+    color: rgb(51, 51, 51);
     transition: all 2s;
+    min-height: 100vh;
+/*     max-width: 1200px;
+ */    height: 750px;
+   /*  max-width: 1200px;
+    max-height: 750px; */
 }
 
 body.switch {
@@ -37,14 +43,18 @@ header {
 
 h1{
     font-family: Lilita One;
+    font-size: 45px;
 }
 
 h2{ 
     font-family: Life Savers;
 }
+
+
 h1, h2 {
     margin-left: 80px;
-}
+/*     margin-left: 50px;
+ */}
 
 
 
@@ -75,11 +85,14 @@ main {
     display: flex;
     justify-content: space-evenly;
     margin: 1em auto;
+    padding: 0 80px 0 80px;
+/*     padding: 0 46px 0 46px;
+ */
 }
 
 main section {
     flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
+    border: 1px rgb(235, 235, 235) ;
     background-color: #D9EDFF;
     margin: 0 .25em;
     padding: 1em;
@@ -88,15 +101,22 @@ main section {
 
 main section.switch {
      flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
+    border: 1px rgb(235, 235, 235) ;
     background-color: #254C76;
     margin: 0 .25em;
     padding: 1em;
 }
 
+#projects, #research, #development, #capstone {
+    font-family: poppins;
+    font-size: 17px;
+    color: rgb(239, 158, 158)
+}
 
 a {
     text-decoration: none;
+    font-family: poppins;
+    font-size: 14px;
 }
 
 nav ol, nav ul {
@@ -105,34 +125,38 @@ nav ol, nav ul {
     padding-left: 0;
 }
 
-section li {
+/* section li {
     padding-left: 1.2em;
-}
+} */
+
+section h3  {
+        color: #51a0d0;
+/*     color: #dedede; 
+ */}
 
 section a {
-    line-height: 1.1em;
+    line-height: 1.2em;
     display: inline-block;
     padding: .5em;
-    color: rgb(31, 31, 31);
+    color: rgb(50, 50, 50);
 }
 
-section a:hover {
-    background-color: orange;
-    color: #333;
+section a:hover { 
+    color: #348dc5;
 }
 
 
 section.switch h3  {
-    color: #dedede; 
-}
+        color: rgb(240, 187, 187)
+/*     color: #dedede; 
+ */}
 
 section.switch a  {
     color: #dedede; 
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    color: rgb(239, 158, 158);
 }
 
 
@@ -141,23 +165,34 @@ button {
     position: absolute;
     top: 20px;
     right: 20px;
+    width: 50px;
+    height: 50px;
     padding: 12px;
-    background-color: orange;
-    color: #333;
+    background: url('images/coloredmorningbunny.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     border: 1px solid transparent;
+
 }
 
 button:hover {
-    background-color: coral;
     cursor: pointer;
+    background: url('images/colorednightbunny.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
+    cursor: pointer;
+    background: url('images/colorednightbunny.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+    cursor: pointer;
+    background: url('images/coloredmorningbunny.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
