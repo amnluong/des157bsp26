@@ -72,6 +72,53 @@
     font-size: 60px;
 }
 
+#lostmyhead {
+/*     position: absolute;
+ */ 
+    position: relative;   
+    top: 65%;
+    left: 0%;
+    color:rgb(255, 255, 255);
+    transition: opacity 1s ease-in-out;
+    font-size: 60px;
+}
+
+#seenthelight {
+/*     position: absolute;
+ */ 
+    position: relative;   
+    top: 65%;
+    left: 0%;
+    color:rgb(255, 255, 255);
+    transition: opacity 1s ease-in-out;
+    font-size: 60px;
+}
+
+#aboutyou {
+/*     position: absolute;
+ */ 
+    position: relative;   
+    top: 65%;
+    left: 0%;
+    color:rgb(255, 255, 255);
+    transition: opacity 1s ease-in-out;
+    font-size: 60px;
+}
+
+#dazednconfused {
+/*     position: absolute;
+ */ 
+    position: relative;   
+    top: 65%;
+    left: 0%;
+    color:rgb(255, 0, 0);
+    transition: opacity 1s ease-in-out;
+    font-size: 60px;
+}
+
+
+
+
 
 .hidden{
     opacity: 0;

@@ -5,9 +5,16 @@
 /*     const fs = document.querySelector('.fa-expand');
  */
 /*     const mySection = document.querySelector('#lyrics');
- */    const dazed = document.querySelector('#dazed');
+ */ 
+    const dazed = document.querySelector('#dazed');
     const confused = document.querySelector('#confused');
     const dayimetyou = document.querySelector('#dayimetyou');
+    const lostmyhead = document.querySelector('#lostmyhead');
+    const seenthelight = document.querySelector('#seenthelight');
+    const aboutyou = document.querySelector('#aboutyou');
+    const dazednconfused = document.querySelector('#dazednconfused');
+
+
 
 
 /*     const pic = document.querySelector('#pic');
@@ -25,7 +32,7 @@
  */
 
     function checkTime(){
-        if (1 < myVideo.currentTime && myVideo.currentTime < 3){
+        if (1 < myVideo.currentTime && myVideo.currentTime < 3) /* || (28 < myVideo.currentTime && myVideo.currentTime < 30) */{
             dazed.className = "showing";
         } else {
             dazed.className = "hidden";
@@ -37,10 +44,34 @@
             confused.className = "hidden";
         }
 
-         if (4 < myVideo.currentTime && myVideo.currentTime < 6){
+         if (3.5 < myVideo.currentTime && myVideo.currentTime < 6){
             dayimetyou.className = "showing";
         } else {
             dayimetyou.className = "hidden";
+        }
+
+         if (6 < myVideo.currentTime && myVideo.currentTime < 11){
+            lostmyhead.className = "showing";
+        } else {
+            lostmyhead.className = "hidden";
+        }
+
+         if (11 < myVideo.currentTime && myVideo.currentTime < 16){
+            seenthelight.className = "showing";
+        } else {
+            seenthelight.className = "hidden";
+        }
+
+         if (17 < myVideo.currentTime && myVideo.currentTime < 21){
+            aboutyou.className = "showing";
+        } else {
+            aboutyou.className = "hidden";
+        }         
+        
+        if (21 < myVideo.currentTime && myVideo.currentTime < 23){
+            dazednconfused.className = "showing";
+        } else {
+            dazednconfused.className = "hidden";
         }
 
 
