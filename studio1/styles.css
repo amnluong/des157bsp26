@@ -1,0 +1,85 @@
+#myVideo {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    
+
+}
+
+.grayscale {
+    filter: grayscale(100%) ;
+
+}
+
+.video {
+    position: relative;
+}
+
+.video:fullscreen {
+    z-index: 1;
+}
+
+
+/* .fa-expand {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+} */
+
+#lyrics {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    z-index: 10;
+}
+
+#dazed {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    color:rgb(0, 30, 255);
+    transition: opacity 2s ease-in-out;
+    font-size: 60px;
+}
+
+#confused {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    color:rgb(255, 0, 0);
+    transition: opacity 1s ease-in-out;
+    font-size: 60px;
+}
+
+#dayimetyou {
+/*     position: absolute;
+ */ 
+    position: relative;   
+    top: 65%;
+    left: 35%;
+    color:rgb(255, 255, 255);
+    transition: opacity 1s ease-in-out;
+    font-size: 60px;
+}
+
+
+.hidden{
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}
+
+
+
