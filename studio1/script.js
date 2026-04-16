@@ -32,13 +32,13 @@
  */
 
     function checkTime(){
-        if (1 < myVideo.currentTime && myVideo.currentTime < 3) /* || (28 < myVideo.currentTime && myVideo.currentTime < 30) */{
+        if ((1 < myVideo.currentTime && myVideo.currentTime < 3) || (24 < myVideo.currentTime && myVideo.currentTime < 25) || (27 < myVideo.currentTime && myVideo.currentTime < 28)){
             dazed.className = "showing";
         } else {
             dazed.className = "hidden";
         }
 
-        if (2 < myVideo.currentTime && myVideo.currentTime < 5){
+        if ((2 < myVideo.currentTime && myVideo.currentTime < 5) || (25 < myVideo.currentTime && myVideo.currentTime < 26) || (28 < myVideo.currentTime && myVideo.currentTime < 29)){
             confused.className = "showing";
         } else {
             confused.className = "hidden";
@@ -74,6 +74,7 @@
             dazednconfused.className = "hidden";
         }
 
+        
 
         /* grayscale */
         if (2.97 < myVideo.currentTime && myVideo.currentTime < 4.5){
