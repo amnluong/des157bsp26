@@ -14,11 +14,6 @@
     const aboutyou = document.querySelector('#aboutyou');
     const dazednconfused = document.querySelector('#dazednconfused');
 
-
-
-
-/*     const pic = document.querySelector('#pic');
- */
     const myVideo = document.getElementById('myVideo');
     const intervalID = setInterval(checkTime, 1000);
 
@@ -32,7 +27,7 @@
  */
 
     function checkTime(){
-        if ((1 < myVideo.currentTime && myVideo.currentTime < 3) || (24 < myVideo.currentTime && myVideo.currentTime < 25) || (27 < myVideo.currentTime && myVideo.currentTime < 28)){
+        if ((0.3 < myVideo.currentTime && myVideo.currentTime < 1.5) || (24 < myVideo.currentTime && myVideo.currentTime < 25) || (27 < myVideo.currentTime && myVideo.currentTime < 28)){
             dazed.className = "showing";
         } else {
             dazed.className = "hidden";
@@ -56,13 +51,13 @@
             lostmyhead.className = "hidden";
         }
 
-         if (11 < myVideo.currentTime && myVideo.currentTime < 16){
+         if (11 < myVideo.currentTime && myVideo.currentTime < 15.5){
             seenthelight.className = "showing";
         } else {
             seenthelight.className = "hidden";
         }
 
-         if (17 < myVideo.currentTime && myVideo.currentTime < 21){
+         if (16 < myVideo.currentTime && myVideo.currentTime < 21){
             aboutyou.className = "showing";
         } else {
             aboutyou.className = "hidden";

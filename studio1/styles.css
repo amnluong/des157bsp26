@@ -38,6 +38,7 @@
 #lyrics {
     position: absolute;
     display: flex;
+   /*  flex-direction: row; */
     gap: 10px;
     align-items: baseline;
     z-index: 10;
@@ -46,7 +47,7 @@
 #dazed {
     position: relative;
     bottom: 0%;
-    left: 0%;
+    left: 10%;
     color:rgb(0, 30, 255);
     transition: opacity 2s ease-in-out;
     font-size: 60px;
@@ -55,7 +56,7 @@
 #confused {
     position: absolute;
     top: 35%;
-    left: 55%;
+    left: 60%;
     color:rgb(255, 0, 0);
     transition: opacity 1s ease-in-out;
     font-size: 60px;
@@ -64,9 +65,9 @@
 #dayimetyou {
 /*     position: absolute;
  */ 
-    position: relative;   
-    top: 65%;
-    left: 35%;
+    position: absolute;   
+    top: 85%;
+    left: 10%;
     color:rgb(255, 255, 255);
     transition: opacity 1s ease-in-out;
     font-size: 40px;
@@ -75,9 +76,9 @@
 #lostmyhead {
 /*     position: absolute;
  */ 
-    position: relative;   
-    top: 65%;
-    left: 0%;
+    position: absolute;   
+    top: 145%;
+    left: 10%;
     color:rgb(255, 255, 255);
     transition: opacity 1s ease-in-out;
     font-size: 40px;
@@ -86,9 +87,9 @@
 #seenthelight {
 /*     position: absolute;
  */ 
-    position: relative;   
-    top: 65%;
-    left: 0%;
+    position: absolute;   
+    top: 0%;
+    left: 10%;
     color:rgb(255, 255, 255);
     transition: opacity 1s ease-in-out;
     font-size: 40px;
@@ -97,9 +98,9 @@
 #aboutyou {
 /*     position: absolute;
  */ 
-    position: relative;   
-    top: 65%;
-    left: 0%;
+    position: absolute;   
+    top: 95%;
+    left: 10%;
     color:rgb(255, 255, 255);
     transition: opacity 1s ease-in-out;
     font-size: 40px;
@@ -108,10 +109,10 @@
 #dazednconfused {
 /*     position: absolute;
  */ 
-    position: relative;   
-    top: 65%;
-    left: 0%;
-    color:rgb(255, 0, 0);
+    position: absolute;   
+    top: 0%;
+    left: 10%;
+    color:rgb(255, 255, 255);
     transition: opacity 1s ease-in-out;
     font-size: 40px;
 }
