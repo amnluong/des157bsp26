@@ -1,11 +1,7 @@
 (function(){
     'use strict';
     console.log('reading js');
-              
-/*     const fs = document.querySelector('.fa-expand');
- */
-/*     const mySection = document.querySelector('#lyrics');
- */ 
+
     const dazed = document.querySelector('#dazed');
     const confused = document.querySelector('#confused');
     const dayimetyou = document.querySelector('#dayimetyou');
@@ -17,15 +13,8 @@
     const myVideo = document.getElementById('myVideo');
     const intervalID = setInterval(checkTime, 1000);
 
-/*     fs.addEventListener('click', function(){
-        if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen();
-        } else {
-            document.exitFullscreen();
-        }
-    })
- */
 
+    // text shows during certain times of the video 
     function checkTime(){
         if ((0.3 < myVideo.currentTime && myVideo.currentTime < 1.5) || (24 < myVideo.currentTime && myVideo.currentTime < 25) || (27 < myVideo.currentTime && myVideo.currentTime < 28)){
             dazed.className = "showing";
@@ -68,15 +57,7 @@
         } else {
             dazednconfused.className = "hidden";
         }
-
         
-
-        /* grayscale */
-        if (2.97 < myVideo.currentTime && myVideo.currentTime < 4.5){
-            myVideo.classList.add('grayscale');
-        } else {
-            myVideo.classList.remove('grayscale');
-        }
     }
 
 

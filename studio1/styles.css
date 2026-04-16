@@ -5,43 +5,26 @@
     min-width: 100%;
     min-height: 100%;
     z-index: 1;
-    
-
 }
 
-.grayscale {
-    filter: grayscale(100%) ;
-
-}
 
 .video {
     position: relative;
 }
 
-.video:fullscreen {
-    z-index: 1;
-}
-
-
-/* .fa-expand {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 20px;
-    color: white;
-}
-
-.fa-expand:hover {
-    cursor: pointer;
-} */
-
 #lyrics {
     position: absolute;
     display: flex;
-   /*  flex-direction: row; */
     gap: 10px;
     align-items: baseline;
     z-index: 10;
+    font-family: roboto;
+
+}
+
+#lyrics p:hover {
+    color: brown;
+    cursor: pointer;
 }
 
 #dazed {
@@ -63,8 +46,6 @@
 }
 
 #dayimetyou {
-/*     position: absolute;
- */ 
     position: absolute;   
     top: 85%;
     left: 10%;
@@ -74,8 +55,6 @@
 }
 
 #lostmyhead {
-/*     position: absolute;
- */ 
     position: absolute;   
     top: 145%;
     left: 10%;
@@ -85,8 +64,6 @@
 }
 
 #seenthelight {
-/*     position: absolute;
- */ 
     position: absolute;   
     top: 0%;
     left: 10%;
@@ -96,8 +73,6 @@
 }
 
 #aboutyou {
-/*     position: absolute;
- */ 
     position: absolute;   
     top: 95%;
     left: 10%;
@@ -107,8 +82,6 @@
 }
 
 #dazednconfused {
-/*     position: absolute;
- */ 
     position: absolute;   
     top: 0%;
     left: 10%;
@@ -123,11 +96,14 @@
 
 .hidden{
     opacity: 0;
+    visibility: hidden;
 }
 
 .showing {
     opacity: 1;
-}
+    visibility: visible;
+    transition: color 0.2s ease 
 
+}
 
 
