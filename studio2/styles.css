@@ -49,6 +49,7 @@ body {
     border: solid #F4C2C2;
     display: flex;
     flex-direction: column;
+    position: relative;
     
 
 }
@@ -71,6 +72,11 @@ body {
 }
 .line5 {
     margin-top: 40px;
+    position: absolute;
+    top:90%;
+    left: 50%;
+    width: 780px;
+    transform: translate(-50%, -50%);
 }
 
 h1 {
