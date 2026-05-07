@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Library Liberty - Make Your Own Latte </title>
+
+     <link href="styles.css" rel="stylesheet">
+
+
+    <!-- AOS CSS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+      <!-- JQuery Library drag drop -->
+     <script 
+        src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" 
+        crossorigin="anonymous" defer>
+    </script>
+
+    <!-- jQuery UI drag drop -->
+     <script 
+        src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js" 
+        integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous" defer>
+    </script>
+
+
+    <!-- AOS JS  -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+     <script src="script.js" defer></script>
+
+
+</head>
+<body>
+
+    <div id="parent">
+    <div class="receipt">
+        <h1> Receipt </h1>
+    </div>
+    </div>
+
+    <div class="finish">
+        <h1> Make your own latte ! </h1>
+
+        <div class="finaldrink" data-name="finaldrink" >
+                <img class="finalflowerlatte item" src="images/finalflowerlatte.png" data-name="finalflowerlatte" alt="flowerlatte">
+                <img class="finalheartlatte item" src="images/finalheartlatte.png" data-name="finalheartlatte" alt="heartlatte">
+            </div>
+    </div>
+
+    <div class="scroll">
+        <h2> Drag and drop options to receipt </h2>
+
+        <div class="drag">
+            <div class="syrupsauce" data-name="syrupsauce" data-aos="fade-up">
+                 <img src="images/vanilla.png" class="item" data-name="vanilla" alt="vanilla" >
+                <img src="images/hazelnut.png" class="item" data-name="hazelnut" alt="hazelnut" >
+                <img src="images/lavender.png" class="item" data-name="lavender" alt="lavender">
+                <img src="images/caramel.png" class="item" data-name="caramel" alt="caramel">
+                <img src="images/choco.png" class="item" data-name="choco" alt="choco">
+                <img src="images/whitechoco.png" class="item" data-name="whitechoco" alt="whitechoco">
+            </div>
+               
+            <div class="shots" data-name="shots" data-aos="fade-up">
+                <img src="images/singleshot.png" class="item" data-name="singleshot" alt="singleshot">
+                <img src="images/doubleshot.png" class="item" data-name="doubleshot" alt="doubleshot">
+            </div>
+            
+            <div class="milk" data-name="milk" data-aos="fade-up">            
+                <img src="images/almond.png" class="item" data-name="almond" alt="almond">
+                <img src="images/soy.png" class="item" data-name="soy" alt="soy">
+                <img src="images/twopercent.png" class="item" data-name="twopercent" alt="twopercent">
+                <img src="images/oat.png" class="item" data-name="oat" alt="oat">
+            </div>
+
+            <div class="art" data-name="art" data-aos="fade-up">
+                <img src="images/flowerart.png" class="item" data-name="flowerart" alt="flowerart">
+                <img src="images/heartart.png" class="item" data-name="heartart" alt="heartart">
+            </div>
+        </div>
+    </div>
+
+    
+    <footer> 
+        <a href="https://jqueryui.com/droppable/"> jQuery</a>
+        <a href="https://michalsnik.github.io/aos/"> AOS </a>
+    </footer>
+    
+</body>
+</html>
