@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background-color: #0c0c16;
+    color: #c9e8ff; 
+}
+
+/* #canvas-basic {　　// for granmin.js gradient
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+.title {
+/*     background-color: rgb(255, 236, 222);
+ */    text-align: center;
+    padding: 50px;
+    color: #6666ff;
+    font-size: 50px;
+    font-family: silkscreen;
+      /* font-family: Mori; */
+
+}
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap:20px;
+    padding: 40px;
+    width: 100%;
+}
+
+.warn {
+    color: #b9f0d7;  /* #b8baff; */
+    font-family: space mono;
+}
+
+h2 {
+    font-family: space mono;
+    font-size: 24px;
+}
+
+p{
+    font-family: DM sans;
+}
+
+.sticker{ 
+    color: #b8baff;
+    font-family: DM sans;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+    font-size: 43px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    transform: rotate(-2deg);
+
+    cursor: grab;
+    
+}
+
+
+
+
+.questions {
+    width: 40%;
+}
+
+.picframe {
+    width: 60%;
+    position: sticky;
+    top: 0;
+
+    
+    display: block;
+
+   
+
+}
+
+.picframe img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10 {
+    padding-top: 100px;
+}
