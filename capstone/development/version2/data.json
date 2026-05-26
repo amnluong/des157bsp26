@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Where do you envision yourself living in the future?",
+            "options": ["city", "town", "rural"]
+        },
+        {
+            "id": 2,
+            "question": "What matters the most to you in the future?",
+            "options": ["money", "happpiness"]
+        },
+        {
+            "id": 3,
+            "question": "How do you want to feel in the future?",
+            "options": ["secure", "proud"]
+        },
+        {
+            "id": 4,
+            "question": "Do you want a creative job or an office job?",
+            "options": ["creative job", "office job"]
+        },
+        {
+            "id": 5,
+            "question": "Do you envision yourself driving or taking public transportation in the future?",
+            "options": ["drive", "public transport"]
+        },
+        {
+            "id": 6,
+            "question": "Do you want a cat or a dog in the future?",
+            "options": ["cat", "dog"]
+        },
+        {
+            "id": 7,
+            "question": "Do you want a calm or adventurous life in the future?",
+            "options": ["calm", "adventurous"]
+        },
+        {
+            "id": 8,
+            "question": "Do you see yourself staying in one location or traveling a lot?",
+            "options": ["one location", "travel"]
+        },
+        {
+            "id": 9,
+            "question": "Do you want to pursue a masters or find a job?",
+            "options": ["masters", "job"]
+        },
+        {
+            "id": 10,
+            "question": "Do you envision yourself with a famiy or will you stay single?",
+            "options": ["family", "stay single"]
+        }
+    ]
+}

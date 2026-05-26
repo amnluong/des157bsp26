@@ -1,11 +1,3 @@
-/* (function(){
-    'use strict';
-    
-    AOS.init();
-
-})(); */
-
-
 (function(){
     'use strict';
 
@@ -67,36 +59,36 @@
 
     //gsap 
 
-    window.addEventListener("load", () => {
+    /* window.addEventListener("load", () => {
          gsap.registerPlugin(SplitText);
 
         // the target can be selector text, an element, or an Array of elements
         //splitting text
         let split = SplitText.create(".text", {
             type: "chars, words, lines",
-    /*         wordsClass: "word"
-    */    });
+            wordsClass: "word"
+        });
 
         gsap.set(split.chars, {
-         /*    y: 100,
+             y: 100,
             autoAlpha: 0,
             stagger: 0.05,
-            duration: 0.01, */
+            duration: 0.01, 
             opacity: 0
     });
 
         gsap.set(split.chars, {
-            /*    y: 100,
+                y: 100,
                 autoAlpha: 0,
-                duration: 0.01, */
+                duration: 0.01, 
                 opacity: 1,
                 stagger: 0.05,
 
         });
 
-    SplitText.create();
+    SplitText.create(); */
        
         
-  });
+
 
   

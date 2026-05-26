@@ -85,8 +85,10 @@ p{
     width: 60%;
     position: sticky;
     top: 0;
+    overflow: hidden;
 
-    
+    width: fit-content;
+    cursor:pointer;
     display: block;
 }
 
@@ -104,3 +106,4 @@ p{
     padding-bottom: 70px;
 
 }
+
