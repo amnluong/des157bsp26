@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    background-color: #0c0c16;
+    color: #c9e8ff; 
+}
+
+/* #canvas-basic {　　// for granmin.js gradient
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+.title {
+/*     background-color: rgb(255, 236, 222);
+ */ text-align: center;
+    padding: 50px;
+    color: #6666ff;
+    font-size: 50px;
+    font-family: silkscreen;
+      /* font-family: Mori; */
+    overflow:hidden;
+}
+
+.text {
+    display: inline-block;
+}
+
+.title p {
+    font-size: 20px;
+    font-family: DM sans;
+    color: #f0b9db;
+
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap:20px;
+    padding: 40px;
+    width: 100%;
+}
+
+.warn p {
+    color: #b9f0d7;  /* #b8baff; */
+    font-family: space mono;
+    font-size: 23px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-family: space mono;
+    font-size: 24px;
+}
+
+p{
+    font-family: DM sans;
+}
+
+.sticker{ 
+    color: #b8baff;
+    font-family: DM sans;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+    font-size: 43px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    transform: rotate(-2deg);
+
+    cursor: grab;
+    
+}
+
+
+.questions {
+    width: 70%;
+}
+
+.picframe {
+    width: 50%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+
+    width: fit-content;
+    cursor:pointer;
+    display: block;
+}
+
+.picframe img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* .q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10 {
+    padding-top: 200px;
+}
+
+.q10 {
+    padding-bottom: 70px;
+
+} */
+
+.question{
+    padding-top: 200px;
+
+}
+
+.options{
+    padding-bottom: 50px;;
+}
+
+
+
+/* overlay */
+
+#ol-one{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+#ol-one article {
+    background-color: rgb(250, 250, 250)/* rgb(243, 236, 236) */;
+    width: 50vw;
+    padding: 20px 40px 40px 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ol-one article h2 {
+    color: #3434c1 /* rgb(164, 74, 74) */;
+}
+
+#ol-one article p {
+    color: #3a3ab8 /* rgb(164, 74, 74) */;
+}
+
+#ol-one article button {
+    color: white/* rgb(227, 192, 192) */;
+    background-color: #3434c1/* rgb(164, 74, 74) */;
+    border: none;
+    border-radius: 8px ;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+   
+}
+
+/* overlay picframe */
+#picframeoverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+#picframeoverlay article {
+    background-color: rgb(250, 250, 250)/* rgb(243, 236, 236) */;
+    width: 50vw;
+    padding: 20px 40px 40px 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#picframeoverlay article h2, p {
+    color: #6666ff /* rgb(164, 74, 74) */;
+}
+
+#picframeoverlay article button {
+    color: white/* rgb(227, 192, 192) */;
+    background-color: #6666ff/* rgb(164, 74, 74) */;
+    border: none;
+    border-radius: 8px ;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+   
+}
+
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+
