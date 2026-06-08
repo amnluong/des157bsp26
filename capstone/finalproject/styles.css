@@ -4,7 +4,7 @@ body {
     color: #c9e8ff; 
 }
 
-/* #canvas-basic {　　// for granmin.js gradient
+ #canvas-basic {
     position: absolute;
     display: block;
     width: 100%;
@@ -14,7 +14,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
-} */
+} 
 
 .title {
 /*     background-color: rgb(255, 236, 222);
@@ -109,8 +109,13 @@ p{
     cursor: pointer;
     display: block;
     margin: 100px  0 200px ;
+    font-family: DM sans;
 }
 
+.close .data-answer {
+    font-family: DM sans;
+
+}
 
 .picframe {
     width: 30%;
@@ -259,4 +264,14 @@ p{
     display: block;
 }
 
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: DM sans;
+
+}
 

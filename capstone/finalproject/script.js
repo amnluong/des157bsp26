@@ -1,36 +1,3 @@
-(function(){
-    'use strict';
-
-    // for granim.js gradient 
-    /* window.addEventListener("load", function(){
-
-    var granimInstance = new Granim({
-        element: '#canvas-basic',
-        direction: 'top-bottom',
-        isPausedWhenNotInView: true,
-        states : {
-            "default-state": {
-                gradients: [
-                    ['#c9e8ff', '#b9f0d7'],
-                    ['#b9f0d7', '#b8baff'],
-                    ['#b8baff', '#c9e8ff']
-                ]
-            }
-        }
-    });
-    }); */
-    
-    
-    AOS.init({
-        container: document.querySelector('.scroll'),
-        once: false,
-        duration: 1500,
-        offset: 120
-    });
-
-})();
-
-
     //stores icon json
     const selectedAnswers = [];
     let futureDescriptions = {};
