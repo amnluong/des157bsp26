@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- JQuery Library drag drop -->
+    <script 
+        src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" 
+        crossorigin="anonymous" defer>
+    </script>
+
+    <!-- jQuery UI drag drop -->
+    <script 
+        src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js" 
+        integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous" defer>
+    </script>
+
+
+    <!-- AOS JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--     <scriptsrc="https://code.jquery.com/jquery-3.7.1.min.js" defer> </script>
+ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrambleTextPlugin.min.js"></script>
+    
+<!--     tippy.js   -->
+     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+
+ <!--     <script src="path/to/SplitText.min.js"></script>--> 
+      
+ <script src="https://unpkg.com/@popperjs/core@2"></script>
+ <script src="https://unpkg.com/tippy.js@6"></script>
+
+ <script src="script.js" defer></script>
+
+
+    <!-- icons --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+ 
+    <title> Design Your Future! </title>
+
+</head>
+<body>
+
+<!--     <canvas id="canvas-basic"></canvas> //for gradient -granim.js
+ -->
+ 
+    <!-- overlay--> 
+    <div id="ol-one" class="overlay hidden">
+        <article>
+            <h2> Welcome! </h2>
+            <p> Design your own future through a series of questions! Your future cannot be changed so please choose wisely. Have fun designing your own desired future! </p>
+            <button class="close">close</button>
+        </article>
+    </div>
+
+
+
+    <div class="title">
+        <h1 class="text"> Design Your Own Future ! </h1>
+        <p> please drag and drop icon stickers to the picture frame as you scroll through the questions! </p>
+    </div>
+
+    <main>
+        <div class="questions">
+            <div class="warn">
+                <p> Be aware once you answer a question you cannot change your answers...</p>
+            </div>
+
+            <div class="question" data-question="Do you want to pursure a masters or find a job after college?">
+                <h2> Do you want to pursure a masters or find a job after college?</h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="masters">school</span>
+                    <span class="material-symbols-outlined" data-answer="job">business_center</span>
+                </div>
+            </div>
+            <div class="question" data-question="Do you want a creative job or an office job?">
+                <h2> Do you want a creative job or an office job?</h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="creative">palette</span>
+                    <span class="material-symbols-outlined" data-answer="office">laptop_mac</span>
+               </div>
+            </div>
+            <div class="question" data-question="Where do you envision yourself living in the future?">
+                <h2> Where do you envision yourself living in the future? </h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="city">location_city</span>
+                    <span class="material-symbols-outlined" data-answer="town">villa</span>
+                </div>
+            </div>
+            <div class="question" data-question="Do you envision yourself with a family or will you stay single?">
+                <h2> Do you envision yourself with a family or will you stay single?</h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="family">family_group</span>
+                    <span class="material-symbols-outlined" data-answer="single">person</span>
+                </div>
+            </div>
+            <div class="question" data-question="What matters the most to you in the future?">
+                <h2> What matters the most to you in the future? </h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="money">money_bag</span>
+                    <span class="material-symbols-outlined" data-answer="happiness">sentiment_very_satisfied</span>
+                </div>
+            </div>
+            <div class="question" data-question="How do you want to feel in the future?">
+                <h2> How do you want to feel in the future?</h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="secure">shield_person</span>
+                    <span class="material-symbols-outlined" data-answer="proud">thumb_up</span>
+                </div>
+            </div>
+            <div class="question" data-question="Do you envision yourself driving or taking public transportation in the future?">
+                <h2> Do you envision yourself driving or taking public transportation in the future? </h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="drive">directions_car</span>
+                    <span class="material-symbols-outlined" data-answer="public">directions_subway</span>
+                </div>
+            </div>
+            <div class="question" data-question="Do you want a cat or dog in the future?">
+                <h2> Do you want a cat or dog in the future?</h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="cat">pets</span>
+                    <span class="material-symbols-outlined" data-answer="dog">pet_supplies</span>
+                </div>
+            </div>
+            <div class="question" data-question="Do you want a calm or adventurous life in the future?">
+                <h2> Do you want a calm or adventurous life in the future?</h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="calm">self_improvement</span>
+                    <span class="material-symbols-outlined" data-answer="adventurous">hiking</span>
+                </div>
+            </div>
+            <div class="question" data-question="Do you see yourself staying in one location or traveling a lot?">
+                <h2> Do you see yourself staying in one location or traveling a lot?</h2>
+                <div class="options">
+                    <span class="material-symbols-outlined" data-answer="location">location_home</span>
+                    <span class="material-symbols-outlined" data-answer="travel">travel</span>
+                </div>
+            </div>
+        
+
+        
+            <button class="submit">submit</button>
+        </div>
+
+        <div class="picframe">
+            <img src="images/picframe.png" alt="picframe">
+
+            <div id="picframeoverlay" class="overlay hidden">
+                <article>
+                    <h2> Your Future Looks Like...</h2>
+                    <p id="future-result"></p>
+                    <button class="close">close</button>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <div id="icon-popup" class="hidden"></div>
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+    
+</body>
+</html>
