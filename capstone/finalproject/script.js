@@ -36,20 +36,14 @@
 
                 $(this).append(droppedSticker);
 
-                //save answer
                 const answer = ui.draggable.attr("data-answer");
                 selectedAnswers.push(answer);
 
-                //gets og icon
+                //gets og icon and question it is for and answer
                 const draggedIcon = ui.draggable;
-
-                //gets question it belongs to
                 const questionOpacity = draggedIcon.closest(".question");
 
-                //if question not answered 
                 if (questionOpacity.length && !questionOpacity.hasClass("answered")) {
-
-                // mark as answered
                 questionOpacity.addClass("answered");
 
                 // grey out all icons in this question
@@ -66,8 +60,6 @@
                     opacity: "1",
                 });
             }
-
-                console.log("Dropped answer:", answer, selectedAnswers);
             }
         });
 
@@ -78,7 +70,6 @@
 
         //welcome overlay when loaded!!
         const overlay = document.querySelector("#ol-one");
-/*         const closeBtn = document.querySelector(".close"); */
 
         overlay.classList.remove("hidden");
 
@@ -116,11 +107,11 @@
 
         });
            
- 
-picframeClose.addEventListener("click", function(event) {
-    event.stopPropagation();
-    picframeOverlay.classList.add("hidden");
-});
+        //close
+        picframeClose.addEventListener("click", function(event) {
+            event.stopPropagation();
+            picframeOverlay.classList.add("hidden");
+        });
 
 
 
@@ -133,39 +124,6 @@ picframeClose.addEventListener("click", function(event) {
         });
 
         });
-       
-
-        
-    //gsap 
-
-    /* window.addEventListener("load", () => {
-         gsap.registerPlugin(SplitText);
-
-        // the target can be selector text, an element, or an Array of elements
-        //splitting text
-        let split = SplitText.create(".text", {
-            type: "chars, words, lines",
-            wordsClass: "word"
-        });
-
-        gsap.set(split.chars, {
-             y: 100,
-            autoAlpha: 0,
-            stagger: 0.05,
-            duration: 0.01, 
-            opacity: 0
-    });
-
-        gsap.set(split.chars, {
-                y: 100,
-                autoAlpha: 0,
-                duration: 0.01, 
-                opacity: 1,
-                stagger: 0.05,
-
-        });
-
-    SplitText.create(); */
        
         
 
