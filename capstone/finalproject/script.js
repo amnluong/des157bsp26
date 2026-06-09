@@ -98,7 +98,7 @@
                     const answer = selectedAnswers[i];
                     const sentence = futureDescriptions[answer];
                     if (sentence){
-                        sentences = sentences + sentence + "";
+                        sentences = sentences + sentence + " ";
                     }
                 }
                 futureResult.textContent = sentences;
